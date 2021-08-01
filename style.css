@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.brandname{
+    margin-left: 2em;
+    padding: .2em .2em .2em .2em;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #bc604f;
+    text-shadow: 1px 1px 2px rgb(88,32,0);
+}
+nav ul{
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+   padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.container{
+    background-image: url(/img/banner-flowers.jpg);
+    background-size: cover;
+    opacity: .8;
+    height: 50vh;
+}
+
+.container p{
+    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: .05em .04em black;
+    width: 50%;
+    padding: 0em .5em;
+}
+
+button{
+    width: 220px;
+    font-size: 1.4em;
+    margin-bottom: 4em;
+    margin-left: 3em;
+    padding: .5em .5em;
+    background-image: linear-gradient(-90deg, pink, red);
+    color: rgb(250,250,250);
+    border-style:none ;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+    margin: 1em 1em;
+}
+img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.details{
+    background-color: #ccccc8;
+    margin: 1em 3em;
+    padding: .5em 2em;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+@media screen and (max-width: 764px){
+    .container p{
+        font-size: 2.5em;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    nav ul li{
+        font-size: .9em;
+    }
+
+    .brandname{
+        margin-left: 1em;
+    }
+
+}
+
+
+@media  screen and (max-width: 450px) {
+    .container p{
+        font-size: 2em;
+    }
+.gallery{
+    grid-template-columns: 1fr;
+}
+
+nav ul li{
+    font-size: .7em;
+}
+.brandname{
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+}
+
+@media  screen and (min-width: 765px) and (max-width: 1600px) {
+    .container p{
+        font-size: 3em;
+    }
+}
